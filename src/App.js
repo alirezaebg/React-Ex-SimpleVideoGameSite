@@ -15,6 +15,15 @@ class App extends Component {
       users: [...currState.users, user],
     }));
   };
+  
+  // Alternative code for createContact function
+  // createContact = user => {
+  //   user.numGamesPlayed = 0;
+  //   this.setState(currState => {
+  //     currState.users.push(user);
+  //     return currState
+  //   });
+  // };
 
   render() {
     return (
